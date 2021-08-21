@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        :root {
+            --primary-color: green;
+            --secendary-color: tomato;
+        }
+        div{
+            height: 250px;
+           width: 300px;
+        }
+       #div1{
+           background: var(--primary-color);
+           position: absolute;
+           z-index: 3;
+          
+       }
+       #div2{
+           background: var(--secendary-color);
+           position: absolute;
+           z-index: 2;
+           top: 150px;
+           left: 150px;
+       }
+       @media screen and (max-width:600px) {
+           :root {
+            --primary-color: black;
+            --secendary-color: blue;
+           }
+           
+       }
+    </style>  
+</head>
+
+<body>
+ <div id="div1"></div>
+
+ <div id="div2"></div>
+</body>
+</html>
